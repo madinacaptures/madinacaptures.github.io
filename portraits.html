@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MadinaCaptures</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<ul id="navigation">
+	<div id="header">
+		<div>
+			<div class="logo">
+				<!-- <a href="index.html">DinaCaptures</a> -->
+				<a href="index.html"><img src="images/madinacaptureslogo.png" style="width:150px;height:100px;margin-top:-10px;margin-left: 100px;"></a>
+			</div>
+				<li>
+					<a href="index.html">About</a>
+				</li>
+				<li class="active">
+					<a href="portraits.html">Portraits</a>
+				</li>
+				<li>
+					<a href="nature.html">Nature</a>
+				</li>
+				<li>
+					<a href="inquiry.html">Inquiry</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<div id="contents">
+		 <div class="slideshow-container">
+  <div class="video-container">
+    <video autoplay muted loop playsinline style="width:100%">
+      <source src="images/anshu1.mp4" type="video/mp4">
+	  Your browser does not support the video tag or the video file couldn't be loaded.
+    </video>
+
+  <div class="mySlides2">
+    <img class= "Img3" src="images/anshuprom1w.png" alt="Img3" style="width:98%">
+  </div>
+   <div class="mySlides2">
+    <img class= "Img3" src="images/anshuprom2w.jpg" alt="Img3" style="width:98%">
+  </div>
+  <div class="mySlides2">
+    <img class= "Img3" src="images/anshuprom3w.jpg" alt="Img3" style="width:98%">
+  </div>
+  <div class="mySlides2">
+    <img class= "Img3" src="images/anshuprom4w.jpg" alt="Img3" style="width:98%">
+  </div>
+  <div class="mySlides2">
+    <img class= "Img3" src="images/anshu1w.jpg" alt="Img3" style="width:98%">
+  </div>
+  <div class="mySlides2">
+    <img class= "Img3" src="images/anshu2w.jpg" alt="Img3" style="width:98%">
+  </div>
+  <div class="mySlides2">
+    <img class= "Img3" src="images/anshu3w.jpg" alt="Img3" style="width:98%">
+  </div>
+</div>
+</div>
+</div>
+</body>
+<div class="bee-container">
+  <img
+    src="images/bee.png"
+    class="bee"
+    id="bee"
+  />
+<script>
+    window.onload = function () {
+      const bee = document.getElementById("bee");
+      let beeX = 0;
+      let beeY = 0;
+      let targetX = 0;
+      let targetY = 0;
+
+      document.addEventListener("mousemove", (e) => {
+        targetX = e.clientX - 30; // center the bee
+        targetY = e.clientY - 30;
+      });
+
+      function animateBee() {
+        // Move a little closer to the target position
+        beeX += (targetX - beeX) * 0.05;
+        beeY += (targetY - beeY) * 0.05;
+
+        bee.style.left = `${beeX}px`;
+        bee.style.top = `${beeY}px`;
+
+        // Flip based on direction
+        if (targetX < beeX) {
+          bee.style.transform = "scaleX(-1)";
+        } else {
+          bee.style.transform = "scaleX(1)";
+        }
+
+        requestAnimationFrame(animateBee);
+      }
+
+      animateBee();
+    };
+  </script>
+	</div>
+	<div id="footer">
+		<div class="clearfix">
+			<p>
+				Copyright © Madina Captures Photography - All Rights Reserved.
+			</p>
+		</div>
+	</div>
+</body>
+</html>

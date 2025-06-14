@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MadinaCaptures</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<ul id="navigation">
+	<div id="header">
+		<div>
+			<div class="logo">
+				<!-- <a href="index.html">DinaCaptures</a> -->
+				<a href="index.html"><img src="images/madinacaptureslogo.png" style="width:150px;height:100px;margin-top:-10px;margin-left: 100px;"></a>
+			</div>
+				<li>
+				<li class="active">
+					<a href="index.html">About</a>
+				</li>
+				<li>
+					<a href="portraits.html">Portraits</a>
+				</li>
+				<li>
+					<a href="nature.html">Nature</a>
+				</li>
+				<li>
+					<a href="inquiry.html">Inquiry</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+		
+</script>
+	<div class="video-container2">
+        <video autoplay loop muted>
+            <source src="images/squirrel.mp4" type="video/mp4">
+        </video>
+		</div>
+		</div>
+	<div id="contents">
+		<div id="tagline" class="clearfix">
+			<div>
+				<h2 margin: 0 auto;><b>⋆Hello there, I'm Madina!⋆🍀</h2>
+<img class= "Img2" src="images/dina.jpg" alt="Img2"
+  <div class="text">
+    <p>I’m a nature lover who fell in love with photography the moment I got my first beginner DSLR camera back in elementary school. Since then, my camera has been my constant companion. I simply can’t put it down! From beautiful landscapes to candid portraits every subject holds a unique story and beauty that inspires me.
+As a painter I see photography as another way to create art and capture those tiny moments that make life special whether that’s a bumbling bee lost in a flower or a beautiful smile. I have a vision, and I would love to hear yours so together we can create images that reflect your style in a way that feels personal and authentic.
+I’m all about making every session relaxed and enjoyable, where you can be yourself without worrying about stiff poses or fake smiles. The best photos come from real moments and genuine laughter, and that’s exactly what I aim to capture!
+
+</p>
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="bee-container">
+  <img
+    src="images/bee.png"
+    class="bee"
+    id="bee"
+  />
+<script>
+    window.onload = function () {
+      const bee = document.getElementById("bee");
+      let beeX = 0;
+      let beeY = 0;
+      let targetX = 0;
+      let targetY = 0;
+
+      document.addEventListener("mousemove", (e) => {
+        targetX = e.clientX - 30; // center the bee
+        targetY = e.clientY - 30;
+      });
+
+      function animateBee() {
+        // Move a little closer to the target position
+        beeX += (targetX - beeX) * 0.05;
+        beeY += (targetY - beeY) * 0.05;
+
+        bee.style.left = `${beeX}px`;
+        bee.style.top = `${beeY}px`;
+
+        // Flip based on direction
+        if (targetX < beeX) {
+          bee.style.transform = "scaleX(-1)";
+        } else {
+          bee.style.transform = "scaleX(1)";
+        }
+
+        requestAnimationFrame(animateBee);
+      }
+
+      animateBee();
+    };
+  </script>
+  
+	<div id="footer">
+		<div class="clearfix">
+			<p>
+				Copyright © Madina Captures Photography - All Rights Reserved.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
