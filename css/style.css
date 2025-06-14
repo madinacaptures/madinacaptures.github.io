@@ -51,14 +51,14 @@ img {
 	padding: 0px 0;
 }
 #header > div, #footer > div {
-	width: 1230px;
+	width: 920px;
 	margin: 0 auto;
 	padding: 0 20px;
 }
 /** Logo **/
 #header .logo {
 	float: left;
-	margin-right: 600px;
+	margin-right: 400px;
 }
 #header .logo a {
 	background: ;
@@ -93,7 +93,7 @@ img {
 }
 #navigation li {
 	float: left;
-	width: 95px;
+	width: 100px;
 	text-align: center;
 }
 #navigation li a {
@@ -195,9 +195,6 @@ div .Img2 {
 div .Img3 {
       margin: 10px;
     }
-.mySlides2 {
-  display: inline-block;
-  padding: 5px; 
 }
 div .text {
       overflow: hidden; 
